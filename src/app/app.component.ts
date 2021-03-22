@@ -23,17 +23,16 @@ export class AppComponent {
 
   public columns = [
     {
-      headerName: "new",
-      field: "new",
-      valueGetter: function(params) {
-        return params.data.Title + "hee";
-      }
-    },
-    {
       headerName: "",
       field: "Id",
       cellRenderer: "ButtonsRendererComponent",
-      width: 100
+      valueGetter: function(params) {
+        return {
+          Id: params.data.Id,
+          Title: params.data.Title
+        };
+      },
+      width: 200
     },
     {
       headerName: "Title",
