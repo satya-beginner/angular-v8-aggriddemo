@@ -4,15 +4,20 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AgGridModule } from 'ag-grid-angular';
+import { HttpClientModule } from '@angular/common/http';
+import {DateRendererComponent} from './components/date-renderer.component';
+import {ButtonsRendererComponent} from './components/buttons-renderer.component'
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([DateRendererComponent,ButtonsRendererComponent])
   ],
   declarations: [
     AppComponent,
+    DateRendererComponent,
+        ButtonsRendererComponent
 
   ],
   bootstrap: [ AppComponent ]
