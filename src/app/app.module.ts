@@ -1,29 +1,26 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { AgGridModule } from 'ag-grid-angular';
-import { HttpClientModule } from '@angular/common/http';
-import {DateRendererComponent} from './components/date-renderer.component';
-import {ButtonsRendererComponent} from './components/buttons-renderer.component'
+import { AppComponent } from "./app.component";
+import { FormsModule } from "@angular/forms";
+import { AgGridModule } from "ag-grid-angular";
+import { HttpClientModule } from "@angular/common/http";
+import { DateRendererComponent } from "./date-renderer.component";
+import { ButtonsRendererComponent } from "./buttons-renderer.component";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    AgGridModule.withComponents([DateRendererComponent,ButtonsRendererComponent])
+    AgGridModule.withComponents([
+      DateRendererComponent,
+      ButtonsRendererComponent
+    ])
   ],
-  declarations: [
-    AppComponent,
-    DateRendererComponent,
-        ButtonsRendererComponent
-
-  ],
-  bootstrap: [ AppComponent ]
+  declarations: [AppComponent, DateRendererComponent, ButtonsRendererComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
-
+export class AppModule {}
 
 /*
 Copyright Google LLC. All Rights Reserved.

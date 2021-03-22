@@ -1,7 +1,16 @@
-<ag-grid-angular
-    style="width: 500px; height: 500px;"
-    class="ag-theme-alpine"
-    [rowData]="rowData"
-    [columnDefs]="columnDefs"
->
-</ag-grid-angular>
+<div class="page-layout simple fullwidth docs">
+    <!-- CONTENT -->
+    <div class="p-24">
+        <ag-grid-angular
+            style="width: 100%; height: 470px;"
+            class="ag-theme-alpine"
+            [gridOptions]="gridOptions"
+            [rowData]="rowData"
+            (gridReady)="onGridReady($event)"
+            [defaultColDef]="defaultColDef"
+            [rowSelection]="rowSelection"
+            [frameworkComponents]="frameworkComponents"
+        >
+        </ag-grid-angular>
+    </div>
+</div>
