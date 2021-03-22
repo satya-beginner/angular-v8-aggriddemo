@@ -13,6 +13,7 @@ import { ButtonsRendererComponent } from "./components/buttons-renderer.componen
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AgGridModule.withComponents([
       DateRendererComponent,
       ButtonsRendererComponent

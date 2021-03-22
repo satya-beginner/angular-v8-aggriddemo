@@ -5,10 +5,7 @@ import { ICellRendererAngularComp } from "ag-grid-angular";
 @Component({
   selector: "jbuttons",
   template: `
-    <button
-      (click)="test()"
-      >delete</mat-icon
-    >
+    <button (click)="test()">delete</button>
   `
 })
 export class ButtonsRendererComponent implements ICellRendererAngularComp {
