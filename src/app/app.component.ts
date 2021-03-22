@@ -18,17 +18,20 @@ export class AppComponent {
       {
         headerName: "Make",
         field: "make",
-        width: 100
+        width: 100,
+        filter: true
       },
       {
         headerName: "Model",
         field: "model",
-        width: 100
+        width: 100,
+        filter: true
       },
       {
         headerName: "Price",
         field: "price",
-        width: 100
+        width: 100,
+        filter: true
       }
     ];
 
