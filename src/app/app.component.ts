@@ -16,17 +16,17 @@ export class AppComponent {
 
     this.gridOptions.columnDefs = [
       {
-        headerName: "make",
+        headerName: "Make",
         field: "make",
         width: 100
       },
       {
-        headerName: "model",
+        headerName: "Model",
         field: "model",
         width: 100
       },
       {
-        headerName: "price",
+        headerName: "Price",
         field: "price",
         width: 100
       }
