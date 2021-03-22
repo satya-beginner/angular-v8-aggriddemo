@@ -6,7 +6,7 @@ import { FormsModule } from "@angular/forms";
 import { AgGridModule } from "ag-grid-angular";
 import { HttpClientModule } from "@angular/common/http";
 import { DateRendererComponent } from "./date-renderer.component";
-import { ButtonsRendererComponent } from "./buttons-renderer.component";
+// import { ButtonsRendererComponent } from "./buttons-renderer.component";
 
 @NgModule({
   imports: [
@@ -17,7 +17,7 @@ import { ButtonsRendererComponent } from "./buttons-renderer.component";
       ButtonsRendererComponent
     ])
   ],
-  declarations: [AppComponent, DateRendererComponent, ButtonsRendererComponent],
+  declarations: [AppComponent, DateRendererComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

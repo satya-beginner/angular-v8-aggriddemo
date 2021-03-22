@@ -1,19 +1,21 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-import { ICellRendererAngularComp } from 'ag-grid-angular';
+import { ICellRendererAngularComp } from "ag-grid-angular";
 
 @Component({
-    selector: 'currency-cell',
-    template: `{{ params.value | date:'dd-MM-yyyy'}}`,
+  selector: "currency-cell",
+  template: `
+    {{ params.value | date: "dd-MM-yyyy" }}
+  `
 })
-export class DateRendererComponent implements ICellRendererAngularComp {
-    public params: any;
+export class ButtonsRendererComponent implements ICellRendererAngularComp {
+  public params: any;
 
-    agInit(params: any): void {
-        this.params = params;
-    }
+  agInit(params: any): void {
+    this.params = params;
+  }
 
-    refresh(): boolean {
-        return false;
-    }
+  refresh(): boolean {
+    return false;
+  }
 }
