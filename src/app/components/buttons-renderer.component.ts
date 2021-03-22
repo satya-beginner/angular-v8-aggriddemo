@@ -3,9 +3,12 @@ import { Component } from "@angular/core";
 import { ICellRendererAngularComp } from "ag-grid-angular";
 
 @Component({
-  selector: "currency-cell",
+  selector: "jbuttons",
   template: `
-    {{ params.value | date: "dd-MM-yyyy" }}
+    <button
+      (click)="test()"
+      >delete</mat-icon
+    >
   `
 })
 export class ButtonsRendererComponent implements ICellRendererAngularComp {
@@ -17,5 +20,9 @@ export class ButtonsRendererComponent implements ICellRendererAngularComp {
 
   refresh(): boolean {
     return false;
+  }
+
+  test() {
+    alert("TODO action");
   }
 }
