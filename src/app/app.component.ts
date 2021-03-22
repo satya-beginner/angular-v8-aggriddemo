@@ -23,8 +23,17 @@ export class AppComponent {
 
   public columns = [
     {
-      headerName: "Id",
-      field: "Id"
+      headerName: "new",
+      field: "new",
+      valueGetter: function(params) {
+        return params.data.Title + "hee";
+      }
+    },
+    {
+      headerName: "",
+      field: "Id",
+      cellRenderer: "ButtonsRendererComponent",
+      width: 100
     },
     {
       headerName: "Title",
@@ -80,7 +89,7 @@ export class AppComponent {
   // tslint:disable-next-line:typedef
   autoSizeAll(skipHeader) {
     var allColumnIds = [];
-    this.gridColumnApi.getAllColumns().forEach(function (column) {
+    this.gridColumnApi.getAllColumns().forEach(function(column) {
       allColumnIds.push(column.colId);
     });
     this.gridColumnApi.autoSizeColumns(allColumnIds, skipHeader);
