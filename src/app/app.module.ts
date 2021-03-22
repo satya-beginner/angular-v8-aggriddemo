@@ -3,12 +3,13 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AgGridModule.withComponents([])
   ],
   declarations: [
     AppComponent,
